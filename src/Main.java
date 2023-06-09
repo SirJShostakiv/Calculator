@@ -94,6 +94,9 @@ public class Main {
         numbers[0] = tryToArabic(parts[0]);
         numbers[1] = tryToArabic(parts[1]);
 
+        if(parts.length != 3)
+            throw new IOException("Неверный формат ввода");
+
         if(counter == 0) { //если нет римских чисел
             for (int i = 0; i < numbers.length; i++){
                 try {
